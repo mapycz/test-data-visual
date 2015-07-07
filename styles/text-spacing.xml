@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Map srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs" background-color="rgb(255,100,100)">
     <Parameters>
-        <Parameter name="sizes">512,512</Parameter>
+        <Parameter name="sizes">512,1024</Parameter>
+        <Parameter name="bbox">1, -25, 13, -1</Parameter>
     </Parameters>
     <Style name="road">
         <Rule>
