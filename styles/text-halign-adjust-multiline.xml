@@ -27,6 +27,7 @@
                 placement="line"
                 max-char-angle-delta="0"
                 horizontal-alignment="adjust"
+                allow-overlap="true"
                 >"Adjust\nmultiline"</TextSymbolizer>
         </Rule>
     </Style>
