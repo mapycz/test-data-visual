@@ -9,7 +9,11 @@
         <Parameter name="bbox">-1, -1, 11, 1</Parameter>
     </Parameters>
 
-    <xsl:stylesheet id="stylesheet" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
+    <xsl:stylesheet id="stylesheet" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+        xmlns:dyn="http://exslt.org/dynamic"
+        extension-element-prefixes="dyn"
+        version="1.0">
+
         <xsl:output method="xml" indent="yes"/>
 
         <xsl:template match="xsl:stylesheet" />
@@ -18,6 +22,12 @@
             <xsl:copy>
                 <xsl:apply-templates select="node()|@*"/>
             </xsl:copy>
+        </xsl:template>
+
+        <xsl:template match="TextSymbolizer/@size">
+            <xsl:attribute name="size">
+                <xsl:value-of select="dyn:evaluate(.)" />
+            </xsl:attribute>
         </xsl:template>
 
         <xsl:template match="LineSymbolizer[@marker-begin|@marker-end]">
@@ -101,6 +111,11 @@
                 stroke="blue"
                 geometry-transform="translate(0, 50)"
                 />
+            <TextSymbolizer
+                size="substring('12345', 0, 3) * 4"
+                face-name="DejaVu Sans Book">
+                "eval"
+            </TextSymbolizer>
         </Rule>
     </Style>
     <Layer name="layer">
