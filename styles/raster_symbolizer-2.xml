@@ -1,0 +1,25 @@
+<Map>
+    <Parameters>
+        <Parameter name="sizes">512,512</Parameter>
+    </Parameters>
+
+    <Style name="raster">
+        <Rule>
+            <RasterSymbolizer scaling="bilinear">
+                <RasterColorizer default-color="red">
+                    <stop value="290" color="white"/>
+                    <stop value="400" color="black"/>
+                </RasterColorizer>
+            </RasterSymbolizer>
+        </Rule>
+    </Style>
+
+    <Layer name="dataraster">
+        <StyleName>raster</StyleName>
+        <Datasource>
+            <Parameter name="file">../sample.tif</Parameter>
+            <Parameter name="type">gdal</Parameter>
+            <Parameter name="band">1</Parameter>
+        </Datasource>
+    </Layer>
+</Map>
