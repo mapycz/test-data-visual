@@ -1,0 +1,78 @@
+<Map background-image="../../data/images/pattern.png">
+    <Parameters>
+        <Parameter name="sizes">512, 512</Parameter>
+        <Parameter name="bbox">0, -1, 1, 1</Parameter>
+    </Parameters>
+
+    <Style name="a1">
+        <Rule>
+            <Filter>[id] = 1</Filter>
+            <MarkersSymbolizer fill="red" width="200" height="200" ignore-placement="true" />
+        </Rule>
+    </Style>
+
+    <Style name="a2">
+        <Rule>
+            <Filter>[id] = 2</Filter>
+            <MarkersSymbolizer fill="red" width="200" height="200" ignore-placement="true" />
+        </Rule>
+    </Style>
+
+    <Style name="a3">
+        <Rule>
+            <Filter>[id] = 3</Filter>
+            <MarkersSymbolizer fill="red" width="200" height="200" ignore-placement="true" />
+        </Rule>
+    </Style>
+
+    <Style name="b1" opacity="0.5">
+        <Rule>
+            <Filter>[id] = 1</Filter>
+            <MarkersSymbolizer fill="red" width="200" height="200" ignore-placement="true" />
+        </Rule>
+    </Style>
+
+    <Style name="b2" opacity="0.5">
+        <Rule>
+            <Filter>[id] = 2</Filter>
+            <MarkersSymbolizer fill="red" width="200" height="200" ignore-placement="true" />
+        </Rule>
+    </Style>
+
+    <Style name="b3" opacity="0.5">
+        <Rule>
+            <Filter>[id] = 3</Filter>
+            <MarkersSymbolizer fill="red" width="200" height="200" ignore-placement="true" />
+        </Rule>
+    </Style>
+
+    <Layer opacity="0.5">
+        <StyleName>a1</StyleName>
+        <StyleName>a2</StyleName>
+        <StyleName>a3</StyleName>
+        <Datasource>
+            <Parameter name="type">csv</Parameter>
+            <Parameter name="inline">
+                x, y, id
+                0.3, 0.5, 1
+                0.5, 0.5, 2
+                0.7, 0.5, 3
+            </Parameter>
+        </Datasource>
+    </Layer>
+
+    <Layer>
+        <StyleName>b1</StyleName>
+        <StyleName>b2</StyleName>
+        <StyleName>b3</StyleName>
+        <Datasource>
+            <Parameter name="type">csv</Parameter>
+            <Parameter name="inline">
+                x, y, id
+                0.3, -0.5, 1
+                0.5, -0.5, 2
+                0.7, -0.5, 3
+            </Parameter>
+        </Datasource>
+    </Layer>
+</Map>
