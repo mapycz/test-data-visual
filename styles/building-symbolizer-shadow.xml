@@ -1,0 +1,31 @@
+<Map srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs" 
+  background-image="../../data/images/pattern.png"
+  >
+    <Parameters>
+        <Parameter name="sizes">512, 512</Parameter>
+        <Parameter name="bbox">-20,-20,120,120</Parameter>
+    </Parameters>
+    <Style name="ellipse">
+        <Rule>
+            <BuildingSymbolizer
+                height="20"
+                fill="grey"
+                fill-opacity="1"
+                shadow-length="30"
+                shadow-opacity="0.2"
+                shadow-angle="30"
+                />
+        </Rule>
+    </Style>
+
+    <Layer name="layer" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+        <StyleName>ellipse</StyleName>
+        <Datasource>
+            <Parameter name="type">csv</Parameter>
+            <Parameter name="inline">
+i|wkt
+1|POLYGON((90 40,50 0,10 40,50 80,90 40))
+            </Parameter>
+        </Datasource>
+    </Layer>
+</Map>
