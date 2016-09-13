@@ -13,8 +13,8 @@
             <Parameter name="extent">-1, -1, 1, 1</Parameter>
             <Parameter name="inline">
                 wkt
-                "LINESTRING(-8 0, 8 0)
-                "LINESTRING(0 -8, 0 8)
+                "LINESTRING(-8 0, 8 0)"
+                "LINESTRING(0 -8, 0 8)"
             </Parameter>
         </Datasource>
     </Layer>

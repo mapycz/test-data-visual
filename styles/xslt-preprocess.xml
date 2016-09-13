@@ -123,7 +123,7 @@
         <Datasource>
             <Parameter name="type">csv</Parameter>
             <Parameter name="inline">
-            wkt, placement
+            wkt
             "LINESTRING(0 0, 10 0)"
             </Parameter>
         </Datasource>
