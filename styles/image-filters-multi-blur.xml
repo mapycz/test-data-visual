@@ -2,7 +2,7 @@
 <!DOCTYPE Map[]>
 <Map background-color="#b8dee6" buffer-size="256" maximum-extent="-20037508.34,-20037508.34,20037508.34,20037508.34">
   <Parameters>
-    <Parameter name="sizes">512,512</Parameter>
+    <Parameter name="sizes">512,512;1024,1024</Parameter>
   </Parameters>
 
   <Style name="countries-over" filter-mode="first">
