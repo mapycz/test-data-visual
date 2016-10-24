@@ -8,10 +8,10 @@
     <Style name="ellipse">
         <Rule>
             <BuildingSymbolizer
-                height="20"
+                height="70"
                 fill="grey"
                 fill-opacity="1"
-                shadow-length="30"
+                shadow-length="90"
                 shadow-opacity="0.2"
                 shadow-angle="30"
                 />
