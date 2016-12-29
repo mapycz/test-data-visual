@@ -46,7 +46,6 @@
                 collision-cache-insert="grid"
                 collision-cache-detect="grid,default"
                 />
-            <DebugSymbolizer />
             <DebugSymbolizer
                 collision-cache="grid"
                 />
