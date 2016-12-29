@@ -30,18 +30,21 @@
                 >
                 "Multiline\ntext"</TextSymbolizer>
             <TextSymbolizer
+                opacity="0"
                 face-name="DejaVu Sans Book"
                 size="10"
                 placement="line"
                 spacing="1"
-                collision-cache="grid"
+                collision-cache-insert="grid"
+                collision-cache-detect="grid"
                 >
                 "X"</TextSymbolizer>
             <MarkersSymbolizer
                 placement="alternating-grid"
                 grid-cell-width="15"
                 grid-cell-height="10"
-                collision-cache="grid"
+                collision-cache-insert="grid"
+                collision-cache-detect="grid,default"
                 />
             <DebugSymbolizer />
             <DebugSymbolizer
