@@ -1,0 +1,28 @@
+<Map background-color="white">
+    <Parameters>
+        <Parameter name="sizes">256,256</Parameter>
+    </Parameters>
+
+    <Style name="polygon">
+        <Rule>
+            <LinePatternSymbolizer
+                file="../../data/svg/airfield-12.svg"
+                fill="blue"
+                stroke="red"
+                stroke-width="2"
+                transform="rotate(90) scale(2)"
+                />
+        </Rule>
+    </Style>
+
+    <Layer name="polygon">
+        <StyleName>polygon</StyleName>
+        <Datasource>
+            <Parameter name="type">csv</Parameter>
+            <Parameter name="inline">
+                wkt
+                "POLYGON((1 0, 0 -1, -1 0, 0 1, 1 0))"
+            </Parameter>
+        </Datasource>
+    </Layer>
+</Map>
