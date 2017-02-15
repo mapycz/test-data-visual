@@ -1,0 +1,26 @@
+<Map background-color="white">
+    <Parameters>
+        <Parameter name="sizes">256,256</Parameter>
+    </Parameters>
+
+    <Style name="polygon">
+        <Rule>
+            <PolygonPatternSymbolizer
+                transform="scale(0.2)"
+                spacing="6"
+                file="../../data/images/marker.png"
+                />
+        </Rule>
+    </Style>
+
+    <Layer name="polygon">
+        <StyleName>polygon</StyleName>
+        <Datasource>
+            <Parameter name="type">csv</Parameter>
+            <Parameter name="inline">
+                wkt
+                "POLYGON((1 0, 0 -1, -1 0, 0 1, 1 0))"
+            </Parameter>
+        </Datasource>
+    </Layer>
+</Map>
