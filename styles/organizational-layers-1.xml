@@ -1,0 +1,80 @@
+<Map>
+    <Parameters>
+        <Parameter name="sizes">512,512</Parameter>
+        <Parameter name="bbox">-1,-1,1,1</Parameter>
+    </Parameters>
+
+    <Style name="marker">
+        <Rule>
+            <MarkersSymbolizer />
+        </Rule>
+    </Style>
+
+    <Style name="text">
+        <Rule>
+            <TextSymbolizer
+                size="30"
+                face-name="DejaVu Sans Bold"
+                allow-overlap="true"
+                fill="black">
+                [text]
+            </TextSymbolizer>
+        </Rule>
+    </Style>
+
+    <Layer name="texts">
+        <Layer name="text-1">
+            <StyleName>text</StyleName>
+            <Datasource>
+                <Parameter name="type">csv</Parameter>
+                <Parameter name="inline">
+                    x, y, text
+                    -0.5, -0.5, "text-1"
+                </Parameter>
+            </Datasource>
+        </Layer>
+        <Layer name="text-2">
+            <StyleName>text</StyleName>
+            <Datasource>
+                <Parameter name="type">csv</Parameter>
+                <Parameter name="inline">
+                    x, y, text
+                    0.5, -0.5, "text-2"
+                </Parameter>
+            </Datasource>
+        </Layer>
+        <Layer name="text-3">
+            <StyleName>text</StyleName>
+            <Datasource>
+                <Parameter name="type">csv</Parameter>
+                <Parameter name="inline">
+                    x, y, text
+                    -0.5, 0.5, "text-3"
+                </Parameter>
+            </Datasource>
+        </Layer>
+        <Layer name="text-4">
+            <StyleName>text</StyleName>
+            <Datasource>
+                <Parameter name="type">csv</Parameter>
+                <Parameter name="inline">
+                    x, y, text
+                    0.5, 0.5, "text-4"
+                </Parameter>
+            </Datasource>
+        </Layer>
+    </Layer>
+
+    <Layer name="markers">
+        <Layer name="marker-1">
+            <StyleName>marker</StyleName>
+            <Datasource>
+                <Parameter name="type">csv</Parameter>
+                <Parameter name="inline">
+                    x, y
+                    0, 0
+                </Parameter>
+            </Datasource>
+        </Layer>
+    </Layer>
+</Map>
