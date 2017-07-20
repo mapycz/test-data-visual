@@ -1,0 +1,34 @@
+<Map font-directory="../fonts/Funkster/">
+    <Parameters>
+        <Parameter name="sizes">512, 512</Parameter>
+    </Parameters>
+    <Style name="1">
+        <Rule>
+            <LineSymbolizer
+                stroke="lightgrey"
+                stroke-width="10"
+                smooth="1"
+                />
+            <TextSymbolizer
+                face-name="Funkster Medium"
+                placement="line"
+                size="20"
+                spacing="20"
+                smooth="1"
+                >
+                <Format face-name="DejaVu Sans Book">"Test: "</Format>
+                <Format face-name="Funkster Medium">"Test"</Format>
+            </TextSymbolizer>
+        </Rule>
+    </Style>
+    <Layer name="1">
+        <StyleName>1</StyleName>
+        <Datasource>
+            <Parameter name="type">csv</Parameter>
+            <Parameter name="inline">
+                WKT
+                "LINESTRING(-10  0, 0 20, 10 0, 15 5)"
+            </Parameter>
+        </Datasource>
+    </Layer>
+</Map>
