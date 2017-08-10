@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Map>
+<Map background-color="white">
+    <Parameters>
+        <Parameter name="sizes">256,256</Parameter>
+    </Parameters>
+
+    <Layer name="points">
+        <StyleName>shield</StyleName>
+        <Datasource>
+            <Parameter name="type">csv</Parameter>
+            <Parameter name="extent">-1, -1, 1, 1</Parameter>
+            <Parameter name="inline">
+                wkt
+                POINT(0 0)
+            </Parameter>
+        </Datasource>
+    </Layer>
+
+    <Style name="shield">
+        <Rule>
+            <ShieldSymbolizer
+                face-name="DejaVu Sans Book"
+                dy="0"
+                size="32"
+                file="../../data/images/crosshair16x16.png"
+                transform="translate(-50) scale(3)"
+                fill="black"
+                placement="point"
+                allow-overlap="true"
+                vertical-alignment="middle">"E55"</ShieldSymbolizer>
+            <DebugSymbolizer />
+        </Rule>
+    </Style>
+</Map>
