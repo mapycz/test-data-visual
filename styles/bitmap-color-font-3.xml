@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Map [
+<!ENTITY Connectivity_Logo_alt_svg "\xee\x80\x80">
+<!ENTITY Gtk-go-back-ltr_svg "\xee\x80\x81">
+<!ENTITY Gtk-go-down_svg "\xee\x80\x82">
+<!ENTITY Gtk-goto-last-ltr_svg "\xee\x80\x83">
+<!ENTITY Gtk-go-up_svg "\xee\x80\x84">
+<!ENTITY HSR_1996_II_3_4f_svg "\xee\x80\x85">
+<!ENTITY HSR_1996_II_3_4g_svg "\xee\x80\x86">
+<!ENTITY HSR_1996_II_3_4h_svg "\xee\x80\x87">
+<!ENTITY HSR_1996_II_3_4i_svg "\xee\x80\x88">
+<!ENTITY HSR_1996_II_3_5e_svg "\xee\x80\x89">
+<!ENTITY HSR_1996_II_3_5f_svg "\xee\x80\x8a">
+<!ENTITY HSR_1996_II_3_5g_svg "\xee\x80\x8b">
+<!ENTITY HSR_1996_II_3_5h_svg "\xee\x80\x8c">
+]>
+<Map font-directory="../fonts/color-font/">
+    <Parameters>
+        <Parameter name="sizes">512, 512</Parameter>
+        <Parameter name="bbox">-1.1, -1.1, 1.1, 1.1</Parameter>
+    </Parameters>
+    <Style name="1">
+        <Rule>
+            <LineSymbolizer
+                stroke="grey"
+                stroke-width="30"
+                smooth="1"
+                />
+            <TextSymbolizer
+                placement="line"
+                upright="right-only"
+                smooth="1"
+                spacing="20"
+                face-name="ColorArrows Medium"
+                size="20"
+                halo-radius="2"
+                halo-fill="white"
+                >
+                <Format size="14" face-name="DejaVu Sans Book">"Direction: "</Format>
+                "&HSR_1996_II_3_4h_svg;"
+            </TextSymbolizer>
+            <TextSymbolizer
+                placement="line"
+                upright="left-only"
+                smooth="1"
+                spacing="20"
+                face-name="ColorArrows Medium"
+                size="20"
+                halo-radius="2"
+                halo-fill="white"
+                >
+                <Format size="14" face-name="DejaVu Sans Book">"Direction: "</Format>
+                "&HSR_1996_II_3_4g_svg;"
+            </TextSymbolizer>
+
+            <TextSymbolizer
+                placement="line"
+                dy="-30"
+                upright="right-only"
+                smooth="1"
+                spacing="40"
+                face-name="ColorArrows Medium"
+                size="20"
+                halo-radius="2"
+                halo-fill="white"
+                >
+                <Format size="14" face-name="DejaVu Sans Book">"Opposite: "</Format>
+                "&HSR_1996_II_3_5f_svg;"
+            </TextSymbolizer>
+            <TextSymbolizer
+                placement="line"
+                dy="-30"
+                upright="left-only"
+                smooth="1"
+                spacing="40"
+                face-name="ColorArrows Medium"
+                size="20"
+                halo-radius="2"
+                halo-fill="white"
+                >
+                <Format size="14" face-name="DejaVu Sans Book">"Opposite: "</Format>
+                "&HSR_1996_II_3_5g_svg;"
+            </TextSymbolizer>
+        </Rule>
+    </Style>
+    <Layer name="1">
+        <StyleName>1</StyleName>
+        <Datasource>
+            <Parameter name="type">csv</Parameter>
+            <Parameter name="inline">
+                WKT
+                "POLYGON((-1 0, 0 1, 1 0, 0 -1, -1 0))"
+            </Parameter>
+        </Datasource>
+    </Layer>
+</Map>
