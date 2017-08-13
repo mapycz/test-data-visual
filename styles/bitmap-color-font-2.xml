@@ -6,7 +6,7 @@
         <Rule>
             <LineSymbolizer
                 stroke="lightgrey"
-                stroke-width="10"
+                stroke-width="30"
                 smooth="1"
                 />
             <TextSymbolizer
@@ -15,10 +15,13 @@
                 size="20"
                 spacing="20"
                 smooth="1"
+                halo-radius="2"
+                halo-rasterizer="fast"
                 >
                 <Format face-name="DejaVu Sans Book">"Test: "</Format>
                 <Format face-name="Funkster Medium">"Test"</Format>
             </TextSymbolizer>
+            <DebugSymbolizer />
         </Rule>
     </Style>
     <Layer name="1">

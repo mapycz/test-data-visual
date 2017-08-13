@@ -7,9 +7,15 @@
         <Rule>
             <TextSymbolizer
                 face-name="Funkster Medium"
-                size="50">
+                size="46"
+                halo-radius="3"
+                halo-fill="red"
+                halo-rasterizer="fast"
+                >
+                <Format face-name="DejaVu Sans Book">"Test: "</Format>
                 "Test"
             </TextSymbolizer>
+            <DebugSymbolizer />
         </Rule>
     </Style>
     <Layer name="1">
