@@ -56,6 +56,24 @@
                 >
                 "Centroid\nplacement"
             </TextSymbolizer>
+
+            <MarkersSymbolizer
+                placement="polylabel"
+                ignore-placement="true"
+                allow-overlap="true"
+                fill="red"
+                />
+            <TextSymbolizer
+                placement="polylabel"
+                face-name="DejaVu Sans Book"
+                allow-overlap="true"
+                size="12"
+                fill="black"
+                halo-radius="1"
+                halo-fill="white"
+                >
+                "Polylabel"
+            </TextSymbolizer>
         </Rule>
     </Style>
 </Map>

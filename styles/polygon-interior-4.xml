@@ -12,7 +12,7 @@
             <Parameter name="type">csv</Parameter>
             <Parameter name="inline">
                 wkt
-                "POLYGON((1 0, 0 -1, -1 0, 0 1, 0.8 0, 0 0.8, -0.8 0, 0 -0.8, 1 0))"
+                "POLYGON((1 1, -1 1, -1 -1, 1 -1, 1 1))"
             </Parameter>
         </Datasource>
     </Layer>
@@ -34,24 +34,6 @@
                 size="12"
                 >
                 "Interior\nplacement"
-            </TextSymbolizer>
-
-            <MarkersSymbolizer
-                placement="polylabel"
-                ignore-placement="true"
-                allow-overlap="true"
-                fill="red"
-                />
-            <TextSymbolizer
-                placement="polylabel"
-                face-name="DejaVu Sans Book"
-                allow-overlap="true"
-                size="12"
-                fill="black"
-                halo-radius="1"
-                halo-fill="white"
-                >
-                "Polylabel"
             </TextSymbolizer>
         </Rule>
     </Style>

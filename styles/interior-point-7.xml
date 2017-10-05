@@ -33,30 +33,6 @@
                 allow-overlap="true"
                 fill="green"
                 />
-            <TextSymbolizer
-                placement="interior"
-                face-name="DejaVu Sans Book"
-                allow-overlap="true"
-                size="12"
-                fill="black"
-                halo-radius="1"
-                halo-fill="white"
-                dx="12"
-                >
-                "Interior\nplacement"
-            </TextSymbolizer>
-            <TextSymbolizer
-                placement="centroid"
-                face-name="DejaVu Sans Book"
-                allow-overlap="true"
-                size="12"
-                fill="black"
-                halo-radius="1"
-                halo-fill="white"
-                dx="-12"
-                >
-                "Centroid\nplacement"
-            </TextSymbolizer>
         </Rule>
     </Style>
 </Map>
