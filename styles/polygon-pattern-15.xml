@@ -10,7 +10,7 @@
                 transform="scale(0.6 1)"
                 spacing-x="3"
                 spacing-y="5"
-                file="/home/tlj/dev/mapycz/mapy-mapnik-styles/sym/bazina.svg"
+                file="../../data/svg/bazina.svg"
                 />
         </Rule>
     </Style>
