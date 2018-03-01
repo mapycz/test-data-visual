@@ -1,0 +1,37 @@
+<Map srs="+init=epsg:32630" background-color="white">
+  <Parameters>
+    <Parameter name="sizes">256, 256</Parameter>
+    <Parameter name="bbox">-14637 , 4420391.0311 , 424649.968901 , 4859678</Parameter>
+  </Parameters>
+
+<Style name="1" image-filters="agg-stack-blur(10, 10)">
+    <Rule>
+        <RasterSymbolizer>
+            <RasterColorizer default-mode="linear" default-color="#000000">
+                <stop value="0" color="red"/>
+                <stop value="26" color="blue"/>
+            </RasterColorizer>
+        </RasterSymbolizer>
+    </Rule>
+</Style>
+
+<Layer name="1" srs="+init=epsg:32630"
+    maximum-extent="-14637, 3903178, 1126863, 4640034.5">
+    <StyleName>1</StyleName>
+    <Datasource>
+       <Parameter name="file">../../data/raster/dataraster.tif</Parameter>
+       <Parameter name="type">gdal</Parameter>
+       <Parameter name="band">1</Parameter>
+    </Datasource>
+  </Layer>
+
+<Layer name="2" srs="+init=epsg:32630"
+    maximum-extent="-14637, 4640034.5, 1126863, 4859678">
+    <StyleName>1</StyleName>
+    <Datasource>
+       <Parameter name="file">../../data/raster/dataraster.tif</Parameter>
+       <Parameter name="type">gdal</Parameter>
+       <Parameter name="band">1</Parameter>
+    </Datasource>
+  </Layer>
+</Map>
