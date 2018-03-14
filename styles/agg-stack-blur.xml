@@ -1,7 +1,7 @@
 <Map background-color="white" srs="+init=epsg:32630" buffer-size="50">
     <Parameters>
-        <Parameter name="sizes">256,256;512,512</Parameter>
-        <Parameter name="tiles">2,2</Parameter>
+        <Parameter name="sizes">256,256;512,512;2048,2048</Parameter>
+        <Parameter name="tiles">1,1;2,2</Parameter>
     </Parameters>
 
     <Style name="s" image-filters="agg-stack-blur(10,10)" image-filters-inflate="true">
