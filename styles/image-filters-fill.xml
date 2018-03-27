@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Map[]>
+<Map background-color="red">
+    <Parameters>
+        <Parameter name="sizes">256,256</Parameter>
+    </Parameters>
+
+    <Layer direct-image-filters="fill(blue)">
+    </Layer>
+</Map>

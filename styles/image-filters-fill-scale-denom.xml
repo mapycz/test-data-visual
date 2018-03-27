@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Map[]>
+<Map
+    background-color="red"
+    maximum-extent="-20037508.34,-20037508.34,20037508.34,20037508.34"
+    srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <Parameters>
+        <Parameter name="sizes">256,256</Parameter>
+        <Parameter name="bbox">1489604.8072215132415295,6890339.4777389271184802,1492050.7921266406774521,6892785.4626440545544028</Parameter>
+        <!--Parameter name="bbox">-18692063.7709135711193085,19215810.2887235991656780,-18691910.8968570008873940,19215963.1627801693975925</Parameter-->
+    </Parameters>
+
+    <!-- zoom 14 -->
+    <Layer
+        minimum-scale-denominator="25000"
+        maximum-scale-denominator="50000"
+        direct-image-filters="fill(blue)">
+    </Layer>
+
+    <!-- zoom 18 -->
+    <Layer
+        minimum-scale-denominator="1250"
+        maximum-scale-denominator="2500"
+        direct-image-filters="fill(green)">
+    </Layer>
+</Map>
