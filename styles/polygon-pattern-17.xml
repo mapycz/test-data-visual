@@ -7,10 +7,14 @@
     <Style name="polygon">
         <Rule>
             <PolygonPatternSymbolizer
+                alignment="local"
                 lacing="alternating-grid"
-                transform="scale(0.2)"
-                spacing="-6"
-                file="../../data/images/marker.png"
+                transform="scale(0.25)"
+                file="../../data/svg/octocat.svg"
+                />
+            <LineSymbolizer
+                stroke="red"
+                stroke-width="1"
                 />
         </Rule>
     </Style>
@@ -22,6 +26,7 @@
             <Parameter name="inline">
                 wkt
                 "POLYGON((1 0, 0 -1, -1 0, 0 1, 1 0))"
+                "POLYGON((1 0.5, 0 -0.5, -1 0.5, 0 1.5, 1 0.5))"
             </Parameter>
         </Datasource>
     </Layer>
