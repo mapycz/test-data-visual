@@ -1,6 +1,7 @@
 <Map background-color="white">
     <Parameters>
         <Parameter name="sizes">256,256</Parameter>
+        <Parameter name="tiles">1,1;4,4</Parameter>
     </Parameters>
 
     <Style name="polygon">
