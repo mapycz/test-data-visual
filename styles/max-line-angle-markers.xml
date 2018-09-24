@@ -1,0 +1,38 @@
+<Map srs="+init=epsg:32633">
+    <Parameters>
+        <Parameter name="sizes">1024,1024</Parameter>
+    </Parameters>
+
+    <Style name="lines">
+        <Rule>
+            <LineSymbolizer
+                stroke="red"
+                />
+        </Rule>
+    </Style>
+
+    <Style name="markers">
+        <Rule>
+            <MarkersSymbolizer
+                file="shape://arrow"
+                placement="line-max-angle"
+                max-error="0.3"
+                max-line-angle="50"
+                max-line-angle-distance="50"
+                spacing="150"
+                multi-policy="each"
+                allow-overlap="true"
+                transform="scale(0.5)"
+                />
+        </Rule>
+    </Style>
+
+    <Layer name="layer" srs="+init=epsg:32633">
+        <StyleName>lines</StyleName>
+        <StyleName>markers</StyleName>
+        <Datasource>
+            <Parameter name="type">csv</Parameter>
+            <Parameter name="file">../../data/csv/curvy-lines.csv</Parameter>
+        </Datasource>
+    </Layer>
+</Map>
