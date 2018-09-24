@@ -11,25 +11,29 @@
         </Rule>
     </Style>
 
-    <Style name="markers">
+    <Style name="labels">
         <Rule>
-            <MarkersSymbolizer
-                file="shape://arrow"
+            <ShieldSymbolizer
+                file="shape://ellipse"
+                transform="scale(5)"
                 placement="line-max-angle"
-                max-error="0.3"
                 max-line-angle="50"
                 max-line-angle-distance="50"
-                spacing="150"
-                multi-policy="each"
+                label-position-tolerance="25"
+                spacing="200"
+                face-name="DejaVu Sans Book"
+                size="20"
                 allow-overlap="true"
-                transform="scale(0.5)"
-                />
+                halo-radius="1"
+                halo-fill="rgb(255,255,0)">
+                "Text"
+            </ShieldSymbolizer>
         </Rule>
     </Style>
 
     <Layer name="layer" srs="+init=epsg:32633">
         <StyleName>lines</StyleName>
-        <StyleName>markers</StyleName>
+        <StyleName>labels</StyleName>
         <Datasource>
             <Parameter name="type">csv</Parameter>
             <Parameter name="file">../../data/csv/curvy-lines.csv</Parameter>
