@@ -5,9 +5,9 @@
 <Style name="poly">
   <Rule>
     <PolygonSymbolizer/>
-    <MarkersSymbolizer allow-overlap="true" multi-policy="each" ignore-placement="true" width="30" stroke-width="0"/>
-    <MarkersSymbolizer allow-overlap="true" multi-policy="largest" fill="red" ignore-placement="true" width="20" stroke-width="0"/>
-    <MarkersSymbolizer allow-overlap="true" multi-policy="each" fill="yellow" ignore-placement="true" width="10" stroke-width="0"/>
+    <MarkersSymbolizer allow-overlap="true" multi-policy="each" ignore-placement="true" width="30" svg-stroke-width="0"/>
+    <MarkersSymbolizer allow-overlap="true" multi-policy="largest" svg-fill="red" ignore-placement="true" width="20" svg-stroke-width="0"/>
+    <MarkersSymbolizer allow-overlap="true" multi-policy="each" svg-fill="yellow" ignore-placement="true" width="10" svg-stroke-width="0"/>
     <TextSymbolizer allow-overlap="true" halo-radius="2" dy="-20" face-name="DejaVu Sans Book">label</TextSymbolizer>
   </Rule>
 </Style>

@@ -5,19 +5,19 @@
 <Style name="each">
   <Rule>
     <Filter>[i] = 1</Filter>
-    <MarkersSymbolizer placement="point" fill="red" width="30" allow-overlap="true"/>
+    <MarkersSymbolizer placement="point" svg-fill="red" width="30" allow-overlap="true"/>
   </Rule>
 </Style>
 <Style name="whole">
   <Rule>
     <Filter>[i] = 1</Filter>
-    <MarkersSymbolizer placement="point" multi-policy="whole" fill="yellow" width="20" allow-overlap="true"/>
+    <MarkersSymbolizer placement="point" multi-policy="whole" svg-fill="yellow" width="20" allow-overlap="true"/>
   </Rule>
 </Style>
 <Style name="largest">
   <Rule>
     <Filter>[i] = 2</Filter>
-    <MarkersSymbolizer placement="point" multi-policy="largest" fill="blue" width="10" allow-overlap="true"/>
+    <MarkersSymbolizer placement="point" multi-policy="largest" svg-fill="blue" width="10" allow-overlap="true"/>
   </Rule>
 </Style>
 <Style name="boundary">

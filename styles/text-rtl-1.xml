@@ -24,7 +24,7 @@
 
     <Style name="markers">
         <Rule>
-            <MarkersSymbolizer fill="#ffc0cb" stroke="#ffc0cb" ignore-placement="true" />
+            <MarkersSymbolizer svg-fill="#ffc0cb" svg-stroke="#ffc0cb" ignore-placement="true" />
         </Rule>
     </Style>
     <Style name="text">

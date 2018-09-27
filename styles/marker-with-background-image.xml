@@ -10,16 +10,16 @@
             <MarkersSymbolizer
               width="240"
               height="240"
-              fill="steelblue"
-              fill-opacity=".7"
-              stroke="yellow"
-              stroke-width="16"
-              stroke-opacity=".3"
+              svg-fill="steelblue"
+              svg-fill-opacity=".7"
+              svg-stroke="yellow"
+              svg-stroke-width="16"
+              svg-stroke-opacity=".3"
             />
             <MarkersSymbolizer
               width="100"
               opacity=".5"
-              fill="darkorange"
+              svg-fill="darkorange"
               comp-op="multiply"
               transform="skewX(50)"
               allow-overlap="true"
@@ -27,7 +27,7 @@
             <MarkersSymbolizer
               width="100"
               opacity=".5"
-              fill="darkred"
+              svg-fill="darkred"
               comp-op="color-burn"
               transform="skewX(-50)"
               allow-overlap="true"

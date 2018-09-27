@@ -8,9 +8,9 @@
         <Rule>
             <PolygonPatternSymbolizer
                 file="../../data/svg/klec.svg"
-                fill="blue"
-                stroke="red"
-                stroke-width="2"
+                svg-fill="blue"
+                svg-stroke="red"
+                svg-stroke-width="2"
                 />
         </Rule>
     </Style>

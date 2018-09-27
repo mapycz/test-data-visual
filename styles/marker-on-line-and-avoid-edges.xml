@@ -15,7 +15,7 @@
       placement="line"
       spacing="30"
       transform="scale(4,10)"
-      fill="blue"
+      svg-fill="blue"
       avoid-edges="true"
       clip="false">
     </MarkersSymbolizer>
@@ -24,7 +24,7 @@
       file="shape://ellipse"
       placement="vertex-last"
       transform="scale(10,4)"
-      fill="red"
+      svg-fill="red"
       avoid-edges="true"
       clip="false">
     </MarkersSymbolizer>
@@ -33,7 +33,7 @@
       file="shape://ellipse"
       placement="vertex-first"
       transform="scale(10,4)"
-      fill="red"
+      svg-fill="red"
       avoid-edges="true"
       clip="false">
     </MarkersSymbolizer>

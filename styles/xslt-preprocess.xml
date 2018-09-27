@@ -40,7 +40,7 @@
 
         <xsl:template name="set-marker">
             <xsl:attribute name="ignore-placement">true</xsl:attribute>
-            <xsl:attribute name="stroke-width">0</xsl:attribute>
+            <xsl:attribute name="svg-stroke-width">0</xsl:attribute>
             <xsl:attribute name="width">
                 <xsl:choose>
                     <xsl:when test="../@stroke-width">
@@ -61,7 +61,7 @@
                     </xsl:otherwise>
                 </xsl:choose>
             </xsl:attribute>
-            <xsl:attribute name="fill">
+            <xsl:attribute name="svg-fill">
                 <xsl:choose>
                     <xsl:when test="../@stroke">
                         <xsl:value-of select="../@stroke" />

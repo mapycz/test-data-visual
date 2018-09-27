@@ -25,7 +25,7 @@ lat,long,ref1,ref2,ref3,ref4,ref5,ref6,ref7,ref8,ref9,ref10
         </GroupRule>
         <GroupRule>
           <Filter>[ref%] = 2</Filter>
-          <MarkersSymbolizer file="shape://ellipse" width="18" height="18" fill="red" stroke="white" stroke-width="2" />
+          <MarkersSymbolizer file="shape://ellipse" width="18" height="18" svg-fill="red" svg-stroke="white" svg-stroke-width="2" />
           <TextSymbolizer face-name="DejaVu Sans Bold" size="14" fill="white" placement="point">[ref%]</TextSymbolizer>
         </GroupRule>
         <GroupRule>
@@ -50,7 +50,7 @@ lat,long,ref1,ref2,ref3,ref4,ref5,ref6,ref7,ref8,ref9,ref10
         </GroupRule>
         <GroupRule>
           <Filter>[ref%] = 7</Filter>
-          <MarkersSymbolizer file="../../data/svg/rect.svg" width="20" height="20" fill="red" stroke="white" stroke-width="3" />
+          <MarkersSymbolizer file="../../data/svg/rect.svg" width="20" height="20" svg-fill="red" svg-stroke="white" svg-stroke-width="3" />
           <TextSymbolizer face-name="DejaVu Sans Bold" size="14" fill="white" placement="point">[ref%]</TextSymbolizer>
         </GroupRule>
         <GroupRule>

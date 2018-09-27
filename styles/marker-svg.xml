@@ -7,7 +7,7 @@
         </Rule>
         <Rule>
             <Filter>[id]=2</Filter>
-            <MarkersSymbolizer fill-opacity=".5" file="../../data/svg/rect2.svg" />
+            <MarkersSymbolizer svg-fill-opacity=".5" file="../../data/svg/rect2.svg" />
         </Rule>
         <Rule>
             <Filter>[id]=3</Filter>
@@ -15,7 +15,7 @@
         </Rule>
         <Rule>
             <Filter>[id]=4</Filter>
-            <MarkersSymbolizer stroke-width="2" stroke-opacity=".5" file="../../data/svg/rect-no-stroke.svg" />
+            <MarkersSymbolizer svg-stroke-width="2" svg-stroke-opacity=".5" file="../../data/svg/rect-no-stroke.svg" />
         </Rule>
     </Style>
 

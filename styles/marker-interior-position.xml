@@ -8,8 +8,8 @@
     <Style name="poly">
         <Rule>
             <PolygonSymbolizer />
-            <MarkersSymbolizer stroke-width="0" width="7" placement="interior" fill="blue" allow-overlap="true"/>
-            <MarkersSymbolizer stroke-width="0" width="7" placement="point" fill="red" allow-overlap="true"/>
+            <MarkersSymbolizer svg-stroke-width="0" width="7" placement="interior" svg-fill="blue" allow-overlap="true"/>
+            <MarkersSymbolizer svg-stroke-width="0" width="7" placement="point" svg-fill="red" allow-overlap="true"/>
             <DebugSymbolizer />
         </Rule>
     </Style>

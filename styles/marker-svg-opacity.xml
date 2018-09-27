@@ -11,11 +11,11 @@
         </Rule>
         <Rule>
             <Filter>[id]=3</Filter>
-            <MarkersSymbolizer fill-opacity=".5" file="../../data/svg/rect2.svg" />
+            <MarkersSymbolizer svg-fill-opacity=".5" file="../../data/svg/rect2.svg" />
         </Rule>
         <Rule>
             <Filter>[id]=4</Filter>
-            <MarkersSymbolizer stroke-opacity=".5" file="../../data/svg/rect2.svg" />
+            <MarkersSymbolizer svg-stroke-opacity=".5" file="../../data/svg/rect2.svg" />
         </Rule>
     </Style>
 

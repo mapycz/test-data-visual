@@ -5,7 +5,7 @@
 
     <Style name="style">
         <Rule>
-            <MarkersSymbolizer allow-overlap="true" stroke-width="0" fill="darkorange" ignore-placement="true"/>
+            <MarkersSymbolizer allow-overlap="true" svg-stroke-width="0" svg-fill="darkorange" ignore-placement="true"/>
             <LineSymbolizer stroke="#ff0000" stroke-width="2"/>
         </Rule>
     </Style>

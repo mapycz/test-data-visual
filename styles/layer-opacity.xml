@@ -7,42 +7,42 @@
     <Style name="a1">
         <Rule>
             <Filter>[id] = 1</Filter>
-            <MarkersSymbolizer fill="red" width="200" height="200" ignore-placement="true" />
+            <MarkersSymbolizer svg-fill="red" width="200" height="200" ignore-placement="true" />
         </Rule>
     </Style>
 
     <Style name="a2">
         <Rule>
             <Filter>[id] = 2</Filter>
-            <MarkersSymbolizer fill="red" width="200" height="200" ignore-placement="true" />
+            <MarkersSymbolizer svg-fill="red" width="200" height="200" ignore-placement="true" />
         </Rule>
     </Style>
 
     <Style name="a3">
         <Rule>
             <Filter>[id] = 3</Filter>
-            <MarkersSymbolizer fill="red" width="200" height="200" ignore-placement="true" />
+            <MarkersSymbolizer svg-fill="red" width="200" height="200" ignore-placement="true" />
         </Rule>
     </Style>
 
     <Style name="b1" opacity="0.5">
         <Rule>
             <Filter>[id] = 1</Filter>
-            <MarkersSymbolizer fill="red" width="200" height="200" ignore-placement="true" />
+            <MarkersSymbolizer svg-fill="red" width="200" height="200" ignore-placement="true" />
         </Rule>
     </Style>
 
     <Style name="b2" opacity="0.5">
         <Rule>
             <Filter>[id] = 2</Filter>
-            <MarkersSymbolizer fill="red" width="200" height="200" ignore-placement="true" />
+            <MarkersSymbolizer svg-fill="red" width="200" height="200" ignore-placement="true" />
         </Rule>
     </Style>
 
     <Style name="b3" opacity="0.5">
         <Rule>
             <Filter>[id] = 3</Filter>
-            <MarkersSymbolizer fill="red" width="200" height="200" ignore-placement="true" />
+            <MarkersSymbolizer svg-fill="red" width="200" height="200" ignore-placement="true" />
         </Rule>
     </Style>
 

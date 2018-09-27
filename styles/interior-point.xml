@@ -76,7 +76,7 @@
             <MarkersSymbolizer
                 ignore-placement="true"
                 placement="interior"
-                fill="green"
+                svg-fill="green"
                 opacity=".3"
                 allow-overlap="true"
                 />

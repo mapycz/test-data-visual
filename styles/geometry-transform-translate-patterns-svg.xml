@@ -36,16 +36,16 @@
     <Style name="point">
         <Rule>
             <MarkersSymbolizer
-              fill="#437"
+              svg-fill="#437"
               width="10"
-              stroke-width="0"
+              svg-stroke-width="0"
               transform="translate(2,2)"
               allow-overlap="true"
             />
             <MarkersSymbolizer
-              fill="#ec3"
+              svg-fill="#ec3"
               width="10"
-              stroke-width="0"
+              svg-stroke-width="0"
               allow-overlap="true"
             />
         </Rule>

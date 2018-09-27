@@ -12,11 +12,11 @@
             <MarkersSymbolizer
               width="240"
               height="240"
-              fill="steelblue"
-              fill-opacity=".2"
-              stroke="yellow"
-              stroke-width="16"
-              stroke-opacity=".3"
+              svg-fill="steelblue"
+              svg-fill-opacity=".2"
+              svg-stroke="yellow"
+              svg-stroke-width="16"
+              svg-stroke-opacity=".3"
             />
         </Rule>
     </Style>
