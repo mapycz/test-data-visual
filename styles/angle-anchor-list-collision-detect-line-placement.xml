@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Map>
+<Map background-color="white" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+    <Parameters>
+        <Parameter name="sizes">400,400</Parameter>
+    </Parameters>
+
+    <Layer name="points" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+        <StyleName>points</StyleName>
+        <Datasource>
+            <Parameter name="type">csv</Parameter>
+            <Parameter name="extent">-1, -1, 1, 1</Parameter>
+            <Parameter name="inline">
+                wkt, cache
+                "POINT(0 0)", "a"
+                "POINT(0 0.2)", "a"
+                "POINT(0 -0.2)", "a"
+                "POINT(0.2 0)", "b"
+                "POINT(-0.2 0)", "a"
+            </Parameter>
+        </Datasource>
+    </Layer>
+
+    <Layer name="texts" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+        <StyleName>texts</StyleName>
+        <Datasource>
+            <Parameter name="type">csv</Parameter>
+            <Parameter name="extent">-1, -1, 1, 1</Parameter>
+            <Parameter name="inline">
+                wkt
+                "LINESTRING(-0.5 0, 0.5 0)"
+            </Parameter>
+        </Datasource>
+    </Layer>
+
+    <Style name="points">
+        <Rule>
+            <Filter>[cache] = "a"</Filter>
+            <MarkersSymbolizer
+                allow-overlap="true"
+                transform="scale(4)"
+                collision-cache-insert="default,a"
+                />
+            <DebugSymbolizer />
+        </Rule>
+        <Rule>
+            <Filter>[cache] = "b"</Filter>
+            <MarkersSymbolizer
+                allow-overlap="true"
+                transform="scale(4)"
+                collision-cache-insert="default,b"
+                />
+            <DebugSymbolizer />
+        </Rule>
+    </Style>
+
+    <Style name="texts">
+        <Rule>
+            <TextSymbolizer
+                face-name="DejaVu Sans Book"
+                size="20"
+                placement="line"
+                placement-type="list"
+                label-position-tolerance="1"
+                spacing="40"
+                halo-fill="white"
+                halo-radius="1"
+                collision-cache-detect="a,b,default"
+                >
+                "Text"
+                <Placement collision-cache-detect="a" fill="red" />
+            </TextSymbolizer>
+            <DebugSymbolizer />
+        </Rule>
+    </Style>
+</Map>
