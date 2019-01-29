@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<Map>
+  <Parameters>
+    <Parameter name="sizes">256,256</Parameter>
+  </Parameters>
+  <Layer name="points">
+    <StyleName>text</StyleName>
+    <Datasource>
+      <Parameter name="type">csv</Parameter>
+      <Parameter name="inline">
+        wkt
+        POINT(128 128)
+      </Parameter>
+    </Datasource>
+  </Layer>
+  <Style name="text">
+    <Rule>
+      <TextSymbolizer
+          face-name="DejaVu Sans Bold"
+          size="162"
+          fill="gray"
+          placement="point"
+          >"Test"</TextSymbolizer>
+    </Rule>
+  </Style>
+  <Style name="style">
+    <Rule>
+      <RasterSymbolizer scaling="bilinear" opacity="0.5"/>
+    </Rule>
+  </Style>
+  <Layer comp-op="grain-merge-gimp">
+    <StyleName>style</StyleName>
+    <Datasource>
+      <Parameter name="file">../../data/tiff/ndvi_256x256_gray8_striped.tif</Parameter>
+      <Parameter name="type">gdal</Parameter>
+    </Datasource>
+  </Layer>
+</Map>
