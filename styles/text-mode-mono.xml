@@ -9,10 +9,13 @@
                 placement="point"
                 fill="black"
                 face-name="DejaVu Sans Book"
-                size="60"
+                size="10"
                 text-mode="mono"
                 >
-                "Test"
+                "Lorem ipsum"
+                <Format size="12">" dolor sit amet,\n"</Format>
+                <Format size="12" face-name="DejaVu Sans Bold">" consectetur adipisici elit, \n"</Format>
+                <Format size="10" face-name="DejaVu Sans Bold">" sed eiusmod tempor incidunt \n"</Format>
             </TextSymbolizer>
         </Rule>
     </Style>
