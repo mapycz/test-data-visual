@@ -1,0 +1,25 @@
+<Map background-color="white" srs="+init=epsg:32630">
+    <Parameters>
+        <Parameter name="sizes">512,512</Parameter>
+    </Parameters>
+
+    <Style name="raster">
+        <Rule>
+            <RasterSymbolizer>
+                <RasterColorizer default-mode="linear-all-bgra" default-color="red">
+                    <stop value="-10000" color="#000000"/>
+                    <stop value="1674300.8" color="#FFFFFF"/>
+                </RasterColorizer>
+            </RasterSymbolizer>
+        </Rule>
+    </Style>
+
+    <Layer name="dataraster" srs="+init=epsg:32630">
+        <StyleName>raster</StyleName>
+        <Datasource>
+            <Parameter name="file">../../data/raster/dataraster.tif</Parameter>
+            <Parameter name="type">gdal</Parameter>
+            <Parameter name="band">1</Parameter>
+        </Datasource>
+    </Layer>
+</Map>
