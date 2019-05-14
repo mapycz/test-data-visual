@@ -1,0 +1,23 @@
+<Map>
+    <Parameters>
+        <Parameter name="sizes">256,256</Parameter>
+        <Parameter name="bbox">-1,-1,1,1</Parameter>
+    </Parameters>
+    <Style name="s" >
+        <Rule>
+            <TextSymbolizer face-name="DejaVu Sans Bold" size="12">
+                "(4) - (5), (2) - Bf. Hamminkeln (4)"
+            </TextSymbolizer>
+        </Rule>
+    </Style>
+    <Layer>
+        <StyleName>s</StyleName>
+        <Datasource>
+            <Parameter name="type">csv</Parameter>
+            <Parameter name="inline">
+                x, y
+                0, 0
+            </Parameter>
+        </Datasource>
+    </Layer>
+</Map>
