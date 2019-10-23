@@ -1,8 +1,0 @@
-<?xml version="1.0" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="1024px" height="1024px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape">
-<g id="layer" inkscape:groupmode="layer" inkscape:label="layer">
-<path d="M0.0 1024.0 L102.4 1024.0 L102.4 921.6 L204.8 921.6 L204.8 819.2 L307.2 819.2 L307.2 716.8 L409.6 716.8 L409.6 614.4 L512.0 614.4 L512.0 512.0 L614.4 512.0 L614.4 409.6 L716.8 409.6 L716.8 307.2 L819.2 307.2 L819.2 204.8 L921.6 204.8 L921.6 102.4 L1024.0 102.4 L1024.0 0.0" stroke-dasharray="" fill="none" fill-opacity="1.0" stroke="#00008b" stroke-opacity="1.0" stroke-width="3.0px" stroke-linecap="butt" stroke-linejoin="miter" stroke-dashoffset="0.0px"/>
-<path d="M1024.0 0.0 L1024.0 102.4 L921.6 102.4 L921.6 204.8 L819.2 204.8 L819.2 307.2 L716.8 307.2 L716.8 409.6 L614.4 409.6 L614.4 512.0 L512.0 512.0 L512.0 614.4 L409.6 614.4 L409.6 716.8 L307.2 716.8 L307.2 819.2 L204.8 819.2 L204.8 921.6 L102.4 921.6 L102.4 1024.0 L0.0 1024.0" stroke-dasharray="" fill="none" fill-opacity="1.0" stroke="#8b0000" stroke-opacity="1.0" stroke-width="3.0px" stroke-linecap="butt" stroke-linejoin="miter" stroke-dashoffset="0.0px"/>
-</g>
-</svg>
