@@ -1,0 +1,22 @@
+<Map srs="+proj=tmerc +lat_0=0 +lon_0=15 +k=1 +x_0=3500000 +y_0=0 +ellps=krass +towgs84=26,-121,-78 +units=m +no_defs" buffer-size="256">
+    <Parameters>
+        <Parameter name="sizes">2000,2000</Parameter>
+        <Parameter name="bbox">5425664.0, 7945728.0, 5937664.0, 8457728.0</Parameter>
+    </Parameters>
+    <Style name="s" >
+        <Rule>
+            <CollisionSymbolizer clip="false" width="4" height="4" spacing="8" placement="line" allow-overlap="true"/>
+            <DebugSymbolizer />
+        </Rule>
+    </Style>
+    <Layer srs="+init=epsg:3857">
+        <StyleName>s</StyleName>
+        <Datasource>
+            <Parameter name="type">csv</Parameter>
+            <Parameter name="inline">
+wkt
+"POLYGON((-15696144.4152875 10638020.1164344,-15696130.3667677 10615660.8929964,-15696144.4152875 10638020.1164344))"
+            </Parameter>
+        </Datasource>
+    </Layer>
+</Map>
