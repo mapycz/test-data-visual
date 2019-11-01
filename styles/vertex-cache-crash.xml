@@ -1,4 +1,8 @@
 <Map srs="+proj=tmerc +lat_0=0 +lon_0=15 +k=1 +x_0=3500000 +y_0=0 +ellps=krass +towgs84=26,-121,-78 +units=m +no_defs" buffer-size="256">
+    <!--
+        This style was crashing because the bbox and input points are out of given map projection.
+        That led to an empty projected geometry which was not covered in vertex_cache.
+    -->
     <Parameters>
         <Parameter name="sizes">2000,2000</Parameter>
         <Parameter name="bbox">5425664.0, 7945728.0, 5937664.0, 8457728.0</Parameter>
