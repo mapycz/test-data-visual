@@ -1,0 +1,26 @@
+<Map srs="+proj=robin +lon_0=0 +x_0=0 +y_0=0 +ellps=WGS84 +datum=WGS84 +units=m +no_defs" background-color="white">
+  <Parameters>
+    <Parameter name="sizes">600,400</Parameter>
+    <Parameter name="bbox">-4623164,514432,359012,3835884</Parameter>
+  </Parameters>
+<Style name="whole">
+  <Rule>
+      <LineSymbolizer stroke="red" stroke-width="3" />
+      <TextSymbolizer clip="false" face-name="DejaVu Sans Book" size="19.8"
+          fill="blue" halo-fill="white" halo-radius="2" halo-opacity="0.4"
+          placement="line" allow-overlap="true" vertical-alignment="top"
+          horizontal-alignment="adjust" max-char-angle-delta="200">"Sahara"</TextSymbolizer>
+  </Rule>
+</Style>
+<Layer name="multi" buffer-size="500">
+    <StyleName>whole</StyleName>
+    <Datasource>
+       <Parameter name="type">csv</Parameter>
+       <Parameter name="inline">
+           wkt
+           "MULTILINESTRING((-816100 2575400,-681800 2578400,-551700 2581100,-425500 2583500,-303100 2585500,-184000 2587200,-68000 2588500,45200 2589600,155800 2590400,264100 2590900,370400 2591100,475000 2591200,578200 2591000,680300 2590700,781500 2590100,882100 2589400,982400 2588600,1082600 2587600,1183100 2586500,1284200 2585300,1386100 2584100,1489000 2582700,1593400 2581400,1699400 2580000,1807300 2578600,1917500 2577200,2030100 2575800,2145500 2574500,2264000 2573200,2385900 2572000,2511300 2570900,2640700 2569800,2774300 2569000))"
+           "MULTILINESTRING((-989700 2468800,2911100 2484800))"
+       </Parameter>
+    </Datasource>
+  </Layer>
+</Map>
